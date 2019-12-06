@@ -1,0 +1,15 @@
+{
+  // 全体の設定再定義
+  "editor.rulers": [80],
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
+  "editor.fontFamily": "'Ricty Diminished', Consolas, 'Courier New', monospace",
+  "editor.fontSize": 16,
+  "editor.tabSize": 2,
+  "files.encoding": "utf8",
+  "files.autoGuessEncoding": true,
+  // このフォルダ固有の定義
+  "files.eol": "\n",
+  "editor.formatOnSave": true,
+  "prettier.singleQuote": true
+}
