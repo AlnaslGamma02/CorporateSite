@@ -1,2 +1,35 @@
-// fontawesome
+// fontawesomeの読み込み
 @import '../../node_modules/@fortawesome/fontawesome-free/css/all';
+// Google fonts - Noto Sans JP
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap&subset=japanese');
+// Google fonts - Open Sans
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,700&display=swap');
+
+/* カスケーディング　開始位置 */
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: $font-base;
+  font-size: 16px;
+  color: $color-font-black;
+  text-size-adjust: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}

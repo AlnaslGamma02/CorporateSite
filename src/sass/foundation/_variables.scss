@@ -1,0 +1,20 @@
+// 幅関係の設定
+
+// フォント関係の設定
+$font-base: 'Noto Sans JP', sans-serif;
+$font-eng: 'Open Sans', sans-serif;
+
+// 色の設定
+// サイトカラー
+$color-main: #c6f951;
+$color-sub: #3d683b;
+$color-black-op: rgba(0, 0, 0, 0.5);
+// フォントカラー
+$color-font-black: #333;
+$color-font-white: #fff;
+
+// ブレイクポイント
+$breakpoints: (
+  tb: '(min-width: 600px)',
+  pc: '(min-width: 1025px)'
+);

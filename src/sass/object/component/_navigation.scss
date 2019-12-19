@@ -1,0 +1,105 @@
+// ヘッダーのグロナビ
+.c-header-nav {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  transition: 0.5s;
+  @include media(tb) {
+  }
+}
+.c-header-nav-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  transition: 0.5s;
+  background-color: $color-sub;
+  z-index: 2;
+  @include media(tb) {
+  }
+}
+.c-header-nav-menu.toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.c-header-nav-link {
+  display: block;
+  position: relative;
+  padding: 8px 16px;
+  margin: 0;
+  color: $color-font-white;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.5s;
+  z-index: 3;
+  @include media(tb) {
+  }
+}
+.c-menu-icon {
+  display: block;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  padding: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  color: $color-font-white;
+  cursor: pointer;
+  z-index: 2;
+  @include media(tb) {
+    display: none;
+  }
+}
+.c-menu-icon.toggle {
+  position: fixed;
+}
+.c-page-title {
+  position: relative;
+  margin: 0;
+  top: -80px;
+  line-height: 600px;
+  text-align: center;
+  color: $color-font-white;
+  font-size: 64px;
+  font-weight: bold;
+}
+// フッターのグロナビ
+.c-footer-area {
+  margin-top: 40px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  color: $color-font-white;
+  background-color: $color-sub;
+}
+.c-footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+.c-footer-nav-menu {
+  width: 50%;
+  text-align: center;
+}
+.c-footer-list {
+  padding-top: 8px;
+}
+.c-footer-link {
+  color: $color-font-white;
+}
+.c-footer-sns-area {
+  padding-top: 8px;
+  width: 100%;
+  font-size: 32px;
+}
+.c-footer-sns-menu {
+  display: flex;
+  justify-content: space-around;
+}
+.c-copyright {
+  text-align: center;
+  padding-top: 8px;
+}
