@@ -52,7 +52,7 @@ function sass() {
     .pipe(sassGlob())
     .pipe(gulpSass({ outputStyle: 'expanded' }))
     .pipe(postcss([mqpacker()]))
-    .pipe(postcss([cssdeclsort({ order: 'alphabetically' })]))
+    .pipe(postcss([cssdeclsort({ order: 'alphabetical' })]))
     .pipe(postcss([autoprefixer()]))
     .pipe(dest(paths.outCss, { sourcemaps: '.' }));
 }

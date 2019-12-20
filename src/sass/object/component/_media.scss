@@ -6,6 +6,10 @@
   @extend .c-media__heroimage;
   @include heroImage('../img/hero_news_mb.png');
 }
+.c-media__heroimage-service {
+  @extend .c-media__heroimage;
+  @include heroImage('../img/hero_service_mb.png');
+}
 .c-media__thumbnail {
   width: 100%;
   vertical-align: bottom;
