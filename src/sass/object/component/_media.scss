@@ -10,10 +10,15 @@
   @extend .c-media__heroimage;
   @include heroImage('../img/hero_service_mb.png');
 }
+.c-media__toplogo {
+  height: 80px;
+}
 .c-media__thumbnail {
   width: 100%;
   vertical-align: bottom;
 }
-.c-media__toplogo {
-  height: 80px;
+.c-media__service-image {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
 }

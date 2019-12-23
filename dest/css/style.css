@@ -6351,6 +6351,7 @@ a {
 
 .c-page-title {
   color: #fff;
+  font-family: "Open Sans", sans-serif;
   font-size: 64px;
   font-weight: bold;
   line-height: 600px;
@@ -6427,16 +6428,22 @@ a {
   background-size: cover;
 }
 
+.c-media__toplogo {
+  height: 80px;
+}
+
 .c-media__thumbnail {
   vertical-align: bottom;
   width: 100%;
 }
 
-.c-media__toplogo {
-  height: 80px;
+.c-media__service-image {
+  height: auto;
+  vertical-align: bottom;
+  width: 100%;
 }
 
-.c-sectionTitle {
+.c-section-title {
   font-size: 24px;
   font-weight: bold;
   margin: 0;
@@ -6477,6 +6484,46 @@ a {
   font-size: 16px;
   margin: 0;
   width: auto;
+}
+
+.p-service {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  margin-top: 40px;
+  padding: 0 16px;
+}
+
+.p-service-content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.p-service-image-area {
+  min-height: 264px;
+}
+
+.p-service-figure {
+  margin: 0;
+}
+
+.p-service-title {
+  margin: 16px 0 0;
+}
+
+.p-service-title__management-agency {
+  margin: 24px 0 0;
+}
+
+.p-service-paragraph {
+  margin-top: 16px;
 }
 
 @media (min-width: 600px) {
