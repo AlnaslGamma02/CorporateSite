@@ -1,0 +1,22 @@
+.p-table-area {
+  margin-top: 40px;
+}
+.p-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid $color-font-black;
+}
+.p-table-tr {
+  @extend .p-table;
+}
+// .p-table-td {
+// }
+.p-table-item {
+  padding: 16px 0;
+  width: 5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.p-table-content {
+  padding: 16px 0;
+}

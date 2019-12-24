@@ -58,10 +58,10 @@
   position: fixed;
 }
 .c-page-title {
-  position: relative;
+  position: absolute;
   margin: 0;
-  top: -80px;
-  line-height: 600px;
+  top: 50%;
+  transform: translateY(-50%);
   text-align: center;
   color: $color-font-white;
   font-family: $font-eng;

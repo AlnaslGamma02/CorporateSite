@@ -6287,6 +6287,10 @@ a {
   text-decoration: none;
 }
 
+#header {
+  position: relative;
+}
+
 .c-header-nav {
   height: 80px;
   position: relative;
@@ -6354,11 +6358,12 @@ a {
   font-family: "Open Sans", sans-serif;
   font-size: 64px;
   font-weight: bold;
-  line-height: 600px;
   margin: 0;
-  position: relative;
+  position: absolute;
   text-align: center;
-  top: -80px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .c-footer-area {
@@ -6450,6 +6455,27 @@ a {
   text-align: center;
 }
 
+.p-table-area {
+  margin-top: 40px;
+}
+
+.p-table, .p-table-tr {
+  border: 1px solid #333;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.p-table-item {
+  font-weight: bold;
+  padding: 16px 0;
+  text-align: center;
+  width: 5rem;
+}
+
+.p-table-content {
+  padding: 16px 0;
+}
+
 .p-articles-list-area {
   margin-top: 40px;
   padding: 0 16px;
@@ -6524,6 +6550,22 @@ a {
 
 .p-service-paragraph {
   margin-top: 16px;
+}
+
+.p-company-profile {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  margin-top: 40px;
+  padding: 0 16px;
+}
+
+.p-company-map {
+  height: 320px;
+  margin-top: 24px;
+  width: 100%;
 }
 
 @media (min-width: 600px) {
