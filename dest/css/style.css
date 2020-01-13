@@ -6291,6 +6291,24 @@ a {
   position: relative;
 }
 
+.c-button, .c-button__submit {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 2px 4px 8px 1px lightgray;
+  cursor: pointer;
+  min-width: 96px;
+  padding: 8px 0;
+  text-align: center;
+  width: auto;
+}
+
+.c-button__submit {
+  background-color: #c6f951;
+  color: #fff;
+  display: block;
+  margin: 16px auto 0;
+}
+
 .c-header-nav {
   height: 80px;
   position: relative;
@@ -6358,12 +6376,13 @@ a {
   font-family: "Open Sans", sans-serif;
   font-size: 64px;
   font-weight: bold;
+  left: 50%;
   margin: 0;
   position: absolute;
   text-align: center;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .c-footer-area {
@@ -6414,7 +6433,7 @@ a {
   text-align: center;
 }
 
-.c-media__heroimage, .c-media__heroimage-news, .c-media__heroimage-service {
+.c-media__heroimage, .c-media__heroimage-news, .c-media__heroimage-service, .c-media__heroimage-company-profile, .c-media__heroimage-contact-us {
   height: 600px;
   width: 100%;
 }
@@ -6428,6 +6447,20 @@ a {
 
 .c-media__heroimage-service {
   background-image: url(../img/hero_service_mb.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c-media__heroimage-company-profile {
+  background-image: url(../img/hero_companyProfile_mb.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c-media__heroimage-contact-us {
+  background-image: url(../img/hero_contactUs_mb.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -6474,6 +6507,33 @@ a {
 
 .p-table-content {
   padding: 16px 0;
+}
+
+.c-form-area {
+  margin-top: 40px;
+  padding: 0 16px;
+}
+
+.c-form {
+  margin-top: 16px;
+  width: 100%;
+}
+
+.c-form-label {
+  font-weight: bold;
+  padding: 8px 0;
+}
+
+.c-form-email, .c-form-name, .c-form-content {
+  border: 1px solid #333;
+  border-radius: 4px;
+  display: block;
+  padding: 8px;
+  width: 100%;
+}
+
+.c-form-content {
+  resize: none;
 }
 
 .p-articles-list-area {
@@ -6566,6 +6626,51 @@ a {
   height: 320px;
   margin-top: 24px;
   width: 100%;
+}
+
+.p-accordion {
+  margin-top: 40px;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.p-accordion-button {
+  background-color: #fff;
+  border: 1px solid #333;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  overflow: hidden;
+  padding: 16px;
+  position: relative;
+  text-align: left;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: 100%;
+}
+
+.p-accordion-button__first {
+  margin-top: 16px;
+}
+
+.p-accordion-icon {
+  color: #c6f951;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  right: 16px;
+}
+
+.p-accordion-panel {
+  border: 1px solid #333;
+  display: none;
+  overflow: hidden;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.p-accordion-paragraph {
+  line-height: 2;
 }
 
 @media (min-width: 600px) {

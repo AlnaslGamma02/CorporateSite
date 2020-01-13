@@ -1,0 +1,17 @@
+.c-button {
+  padding: 8px 0;
+  width: auto;
+  min-width: 96px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 2px 4px 8px 1px $color-button-shadow;
+  text-align: center;
+  cursor: pointer;
+}
+.c-button__submit {
+  @extend .c-button;
+  display: block;
+  margin: 16px auto 0;
+  color: $color-font-white;
+  background-color: $color-main;
+}

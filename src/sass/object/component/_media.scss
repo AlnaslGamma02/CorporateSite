@@ -10,6 +10,14 @@
   @extend .c-media__heroimage;
   @include heroImage('../img/hero_service_mb.png');
 }
+.c-media__heroimage-company-profile {
+  @extend .c-media__heroimage;
+  @include heroImage('../img/hero_companyProfile_mb.png');
+}
+.c-media__heroimage-contact-us {
+  @extend .c-media__heroimage;
+  @include heroImage('../img/hero_contactUs_mb.png');
+}
 .c-media__toplogo {
   height: 80px;
 }

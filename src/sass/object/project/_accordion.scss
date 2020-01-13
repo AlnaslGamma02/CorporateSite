@@ -1,0 +1,38 @@
+.p-accordion {
+  margin-top: 40px;
+  padding: 0 16px;
+  width: 100%;
+}
+.p-accordion-button {
+  position: relative;
+  width: 100%;
+  padding: 16px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.4s;
+  border: 1px solid $color-font-black;
+  background-color: $color-font-white;
+}
+.p-accordion-button__first {
+  margin-top: 16px;
+}
+.p-accordion-icon {
+  position: absolute;
+  right: 16px;
+  color: $color-main;
+  font-size: 16px;
+  font-weight: bold;
+}
+.p-accordion-panel {
+  display: none;
+  width: 100%;
+  padding: 0 16px;
+  overflow: hidden;
+  border: 1px solid $color-font-black;
+}
+.p-accordion-paragraph {
+  line-height: 2;
+}
