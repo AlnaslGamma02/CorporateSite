@@ -8,10 +8,37 @@
   text-align: center;
   cursor: pointer;
 }
+// 送信ボタン
 .c-button__submit {
   @extend .c-button;
   display: block;
   margin: 16px auto 0;
   color: $color-font-white;
   background-color: $color-main;
+}
+// カルーセルのボタン
+.c-carousel-button {
+  position: absolute;
+  top: 45%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  z-index: 10;
+}
+.c-carousel-button__left {
+  @extend .c-carousel-button;
+  left: 0;
+  font-size: 32px;
+  color: $color-font-white;
+  background-color: $color-main;
+  border-radius: 50%;
+}
+.c-carousel-button__right {
+  @extend .c-carousel-button;
+  right: 0;
+  font-size: 32px;
+  color: $color-font-white;
+  background-color: $color-main;
+  border-radius: 50%;
 }

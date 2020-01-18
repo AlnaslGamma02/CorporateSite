@@ -1,0 +1,10 @@
+// カルーセル
+.p-carousel-container {
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+  overflow: hidden;
+}
+.p-carousel-slide {
+  display: flex;
+}

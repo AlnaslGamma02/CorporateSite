@@ -6309,6 +6309,32 @@ a {
   margin: 16px auto 0;
 }
 
+.c-carousel-button, .c-carousel-button__left, .c-carousel-button__right {
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  width: 40px;
+  z-index: 10;
+}
+
+.c-carousel-button__left {
+  background-color: #c6f951;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 32px;
+  left: 0;
+}
+
+.c-carousel-button__right {
+  background-color: #c6f951;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 32px;
+  right: 0;
+}
+
 .c-header-nav {
   height: 80px;
   position: relative;
@@ -6433,13 +6459,13 @@ a {
   text-align: center;
 }
 
-.c-media__heroimage, .c-media__heroimage-news, .c-media__heroimage-service, .c-media__heroimage-company-profile, .c-media__heroimage-contact-us {
+.c-media__heroimage, .c-media__heroimage-about-us, .c-media__heroimage-service, .c-media__heroimage-news, .c-media__heroimage-company-profile, .c-media__heroimage-contact-us {
   height: 600px;
   width: 100%;
 }
 
-.c-media__heroimage-news {
-  background-image: url(../img/hero_news_mb.png);
+.c-media__heroimage-about-us {
+  background-image: url(../img/hero_aboutUs_mb.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -6447,6 +6473,13 @@ a {
 
 .c-media__heroimage-service {
   background-image: url(../img/hero_service_mb.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c-media__heroimage-news {
+  background-image: url(../img/hero_news_mb.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -6479,6 +6512,10 @@ a {
   height: auto;
   vertical-align: bottom;
   width: 100%;
+}
+
+.c-media__carousel {
+  min-width: 343.2px;
 }
 
 .c-section-title {
@@ -6671,6 +6708,29 @@ a {
 
 .p-accordion-paragraph {
   line-height: 2;
+}
+
+.p-carousel-container {
+  margin-top: 40px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.p-carousel-slide {
+  display: -webkit-box;
+  display: flex;
+}
+
+.p-about-us-area {
+  margin-top: 40px;
+  padding: 0 16px;
+}
+
+.p-about-us-paragraph {
+  font-weight: bold;
+  line-height: 2;
+  margin-top: 32px;
 }
 
 @media (min-width: 600px) {
