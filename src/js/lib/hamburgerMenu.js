@@ -1,5 +1,5 @@
 // ハンバーガーメニュー
-export class HamburgerMenu {
+export default class {
   // ハンバーガーメニュー コンストラクタ
   constructor() {
     this.hamburgerBtn = document.getElementById('js-menu-icon');

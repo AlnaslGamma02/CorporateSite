@@ -1,9 +1,9 @@
 // ハンバーガーメニュー モジュールの読み込み
-import { HamburgerMenu } from './lib/hamburgerMenu';
+import HamburgerMenu from './lib/hamburgerMenu';
 // アコーディオン モジュールの読み込み
-import { Accordion } from './lib/accordion';
+import Accordion from './lib/accordion';
 // カルーセル モジュールの読み込み
-import { Carousel } from './lib/carousel';
+import Carousel from './lib/carousel';
 
 // HTML文書の読み込み終了後に動作する
 document.addEventListener(

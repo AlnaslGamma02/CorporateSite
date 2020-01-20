@@ -1,5 +1,5 @@
 // アコーディオン
-export class Accordion {
+export default class {
   constructor() {
     this.acc = document.getElementsByClassName('p-accordion-button');
   }
@@ -9,7 +9,7 @@ export class Accordion {
   }
 
   attachEvent() {
-    for (let i = 0; i < this.acc.length; i++) {
+    for (let i = 0; i < this.acc.length; i += 1) {
       this.acc[i].addEventListener(
         'click',
         function() {
