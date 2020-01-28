@@ -23,3 +23,25 @@
   width: auto;
   font-size: 16px;
 }
+// トップページ - ニュースセクション
+.p-articles-top-list {
+  width: 100%;
+  margin-top: 40px;
+}
+.p-articles-top-info {
+  font-size: 12px;
+  font-weight: bold;
+}
+.p-articles-top-icon {
+  margin-right: 16px;
+  padding: 0 24px;
+  border-radius: 8px;
+  color: $color-font-white;
+  background-color: $color-main;
+}
+.p-articles-top-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 2;
+}

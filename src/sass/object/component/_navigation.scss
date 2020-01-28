@@ -57,6 +57,7 @@
 .c-menu-icon.toggle {
   position: fixed;
 }
+// ヘッダー部分のタイトル
 .c-page-title {
   position: absolute;
   margin: 0;
@@ -67,6 +68,24 @@
   color: $color-font-white;
   font-family: $font-eng;
   font-size: 64px;
+  font-weight: bold;
+}
+.c-page-title__top {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.c-page-title__top-heading {
+  display: block;
+  width: 90%;
+  margin: 0 auto 0;
+  color: $color-font-white;
+  font-family: $font-eng;
+  font-size: 32px;
   font-weight: bold;
 }
 // フッターのグロナビ
@@ -100,6 +119,9 @@
 .c-footer-sns-menu {
   display: flex;
   justify-content: space-around;
+}
+.c-footer-sns-link {
+  color: $color-font-white;
 }
 .c-copyright {
   text-align: center;

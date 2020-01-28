@@ -1,0 +1,25 @@
+.p-users-voice {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.p-users-voice-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 16px;
+  padding: 16px 48px 32px;
+  border: 1px solid $color-font-black;
+  border-radius: 8px;
+}
+.p-users-voice-text {
+  font-weight: bold;
+}
+.p-users-voice-figure {
+  margin: 16px 0;
+}
+.p-users-voice-name {
+  font-weight: bold;
+}
