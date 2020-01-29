@@ -13,10 +13,7 @@
 // Layout
 // ==========================================================================
 
-@import 'layout/_footer';
 @import 'layout/_header';
-@import 'layout/_main';
-@import 'layout/_sidebar';
 @import 'layout/_container';
 
 // ==========================================================================
@@ -28,38 +25,28 @@
 // -----------------------------------------------------------------
 
 @import 'object/component/_button';
-@import 'object/component/_dialog';
-@import 'object/component/_grid';
-@import 'object/component/_navigation';
+@import 'object/component/_form';
 @import 'object/component/_media';
+@import 'object/component/_navigation';
 @import 'object/component/_section';
 @import 'object/component/_table';
-@import 'object/component/_form';
 
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
 
-@import 'object/project/_articles';
-@import 'object/project/_comments';
-@import 'object/project/_gallery';
-@import 'object/project/_profile';
-@import 'object/project/_service';
-@import 'object/project/_companyProfile';
-@import 'object/project/_accordion';
-@import 'object/project/_carousel';
 @import 'object/project/_aboutUs';
-@import 'object/project/_usersVoice';
+@import 'object/project/_accordion';
+@import 'object/project/_articles';
+@import 'object/project/_carousel';
+@import 'object/project/_companyProfile';
 @import 'object/project/_contactUs';
+@import 'object/project/_service';
+@import 'object/project/_usersVoice';
 
 // -----------------------------------------------------------------
 // Utility
 // -----------------------------------------------------------------
 
-@import 'object/utility/_align';
-@import 'object/utility/_clearfix';
 @import 'object/utility/_margin';
-@import 'object/utility/_position';
-@import 'object/utility/_size';
-@import 'object/utility/_text';
 @import 'object/utility/_padding';

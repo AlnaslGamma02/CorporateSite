@@ -6390,6 +6390,99 @@ a {
   right: 0;
 }
 
+.c-form-area {
+  margin-top: 40px;
+  padding: 0 16px;
+}
+
+.c-form {
+  margin-top: 16px;
+  width: 100%;
+}
+
+.c-form-label {
+  font-weight: bold;
+  padding: 8px 0;
+}
+
+.c-form-email, .c-form-name, .c-form-content {
+  border: 1px solid #333;
+  border-radius: 4px;
+  display: block;
+  padding: 8px;
+  width: 100%;
+}
+
+.c-form-content {
+  resize: none;
+}
+
+.c-media__heroimage, .c-media__heroimage-top, .c-media__heroimage-about-us, .c-media__heroimage-service, .c-media__heroimage-news, .c-media__heroimage-company-profile, .c-media__heroimage-contact-us {
+  height: 600px;
+  width: 100%;
+}
+
+.c-media__heroimage-top {
+  background-image: url(../img/hero_top_mb.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c-media__heroimage-about-us {
+  background-image: url(../img/hero_aboutUs_mb.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c-media__heroimage-service {
+  background-image: url(../img/hero_service_mb.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c-media__heroimage-news {
+  background-image: url(../img/hero_news_mb.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c-media__heroimage-company-profile {
+  background-image: url(../img/hero_companyProfile_mb.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c-media__heroimage-contact-us {
+  background-image: url(../img/hero_contactUs_mb.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c-media__toplogo {
+  height: 80px;
+}
+
+.c-media__thumbnail {
+  vertical-align: bottom;
+  width: 100%;
+}
+
+.c-media__service-image {
+  height: auto;
+  vertical-align: bottom;
+  width: 100%;
+}
+
+.c-media__carousel {
+  min-width: 343.2px;
+}
+
 .c-header-nav {
   height: 80px;
   position: relative;
@@ -6539,72 +6632,6 @@ a {
   text-align: center;
 }
 
-.c-media__heroimage, .c-media__heroimage-top, .c-media__heroimage-about-us, .c-media__heroimage-service, .c-media__heroimage-news, .c-media__heroimage-company-profile, .c-media__heroimage-contact-us {
-  height: 600px;
-  width: 100%;
-}
-
-.c-media__heroimage-top {
-  background-image: url(../img/hero_top_mb.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.c-media__heroimage-about-us {
-  background-image: url(../img/hero_aboutUs_mb.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.c-media__heroimage-service {
-  background-image: url(../img/hero_service_mb.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.c-media__heroimage-news {
-  background-image: url(../img/hero_news_mb.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.c-media__heroimage-company-profile {
-  background-image: url(../img/hero_companyProfile_mb.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.c-media__heroimage-contact-us {
-  background-image: url(../img/hero_contactUs_mb.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.c-media__toplogo {
-  height: 80px;
-}
-
-.c-media__thumbnail {
-  vertical-align: bottom;
-  width: 100%;
-}
-
-.c-media__service-image {
-  height: auto;
-  vertical-align: bottom;
-  width: 100%;
-}
-
-.c-media__carousel {
-  min-width: 343.2px;
-}
-
 .c-section-area {
   margin-top: 40px;
   padding: 0 16px;
@@ -6638,31 +6665,60 @@ a {
   padding: 16px 0;
 }
 
-.c-form-area {
+.p-about-us-area {
   margin-top: 40px;
   padding: 0 16px;
 }
 
-.c-form {
-  margin-top: 16px;
-  width: 100%;
-}
-
-.c-form-label {
+.p-about-us-paragraph {
   font-weight: bold;
-  padding: 8px 0;
+  line-height: 2;
+  margin-top: 32px;
 }
 
-.c-form-email, .c-form-name, .c-form-content {
-  border: 1px solid #333;
-  border-radius: 4px;
-  display: block;
-  padding: 8px;
+.p-accordion {
+  margin-top: 40px;
+  padding: 0 16px;
   width: 100%;
 }
 
-.c-form-content {
-  resize: none;
+.p-accordion-button {
+  background-color: #fff;
+  border: 1px solid #333;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  overflow: hidden;
+  padding: 16px;
+  position: relative;
+  text-align: left;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: 100%;
+}
+
+.p-accordion-button__first {
+  margin-top: 16px;
+}
+
+.p-accordion-icon {
+  color: #c6f951;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  right: 16px;
+}
+
+.p-accordion-panel {
+  border: 1px solid #333;
+  display: none;
+  overflow: hidden;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.p-accordion-paragraph {
+  line-height: 2;
 }
 
 .p-articles-list-area {
@@ -6724,6 +6780,41 @@ a {
   font-weight: bold;
   line-height: 2;
   margin: 0;
+}
+
+.p-carousel-container {
+  margin-top: 40px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.p-carousel-slide {
+  display: -webkit-box;
+  display: flex;
+}
+
+.p-company-profile {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  margin-top: 40px;
+  padding: 0 16px;
+}
+
+.p-company-map {
+  height: 320px;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.p-contact-us-text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 32px;
+  text-align: center;
 }
 
 .p-service {
@@ -6802,90 +6893,6 @@ a {
   text-align: center;
 }
 
-.p-company-profile {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  margin-top: 40px;
-  padding: 0 16px;
-}
-
-.p-company-map {
-  height: 320px;
-  margin-top: 24px;
-  width: 100%;
-}
-
-.p-accordion {
-  margin-top: 40px;
-  padding: 0 16px;
-  width: 100%;
-}
-
-.p-accordion-button {
-  background-color: #fff;
-  border: 1px solid #333;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  overflow: hidden;
-  padding: 16px;
-  position: relative;
-  text-align: left;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  width: 100%;
-}
-
-.p-accordion-button__first {
-  margin-top: 16px;
-}
-
-.p-accordion-icon {
-  color: #c6f951;
-  font-size: 16px;
-  font-weight: bold;
-  position: absolute;
-  right: 16px;
-}
-
-.p-accordion-panel {
-  border: 1px solid #333;
-  display: none;
-  overflow: hidden;
-  padding: 0 16px;
-  width: 100%;
-}
-
-.p-accordion-paragraph {
-  line-height: 2;
-}
-
-.p-carousel-container {
-  margin-top: 40px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-
-.p-carousel-slide {
-  display: -webkit-box;
-  display: flex;
-}
-
-.p-about-us-area {
-  margin-top: 40px;
-  padding: 0 16px;
-}
-
-.p-about-us-paragraph {
-  font-weight: bold;
-  line-height: 2;
-  margin-top: 32px;
-}
-
 .p-users-voice {
   display: -webkit-box;
   display: flex;
@@ -6922,13 +6929,6 @@ a {
 
 .p-users-voice-name {
   font-weight: bold;
-}
-
-.p-contact-us-text {
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 32px;
-  text-align: center;
 }
 
 .u-mt-40 {
