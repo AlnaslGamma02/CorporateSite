@@ -8,65 +8,66 @@
   min-width: 96px;
   text-align: center;
   cursor: pointer;
-}
-.c-top-link-button__production-results {
-  @extend .c-top-link-button;
-  @include linkButton(60%);
-  box-shadow: none;
-}
-.c-top-link-button__service {
-  @extend .c-top-link-button;
-  @include linkButton(70%);
-}
-.c-top-link-button__news {
-  @extend .c-top-link-button;
-  @include linkButton(70%);
-}
-.c-top-link-button__contact {
-  @extend .c-top-link-button;
-  @include linkButton(70%);
+  &__production-results {
+    @extend .c-top-link-button;
+    @include linkButton(60%);
+    box-shadow: none;
+  }
+  &__service {
+    @extend .c-top-link-button;
+    @include linkButton(70%);
+  }
+  &__news {
+    @extend .c-top-link-button;
+    @include linkButton(70%);
+  }
+  &__contact {
+    @extend .c-top-link-button;
+    @include linkButton(70%);
+  }
 }
 // 送信ボタン
 .c-button {
+  border: none;
+  border-radius: 8px;
   padding: 8px 0;
   width: auto;
   min-width: 96px;
-  border: none;
-  border-radius: 8px;
-  box-shadow: 2px 4px 8px 1px $color-button-shadow;
   text-align: center;
   cursor: pointer;
-}
-.c-button__submit {
-  @extend .c-button;
-  display: block;
-  margin: 16px auto 0;
-  color: $color-font-white;
-  background-color: $color-main;
+  &__submit {
+    @extend .c-button;
+    display: block;
+    margin: 16px auto 0;
+    color: $color-font-white;
+    background-color: $color-main;
+    box-shadow: 2px 4px 8px 1px $color-button-shadow;
+  }
 }
 // カルーセルのボタン
 .c-carousel-button {
   position: absolute;
-  top: 45%;
+  top: 50%;
+  transform: translateY(-50%);
   width: 40px;
   height: 40px;
   text-align: center;
   line-height: 40px;
   z-index: 10;
-}
-.c-carousel-button__left {
-  @extend .c-carousel-button;
-  left: 0;
-  font-size: 32px;
-  color: $color-font-white;
-  background-color: $color-main;
-  border-radius: 50%;
-}
-.c-carousel-button__right {
-  @extend .c-carousel-button;
-  right: 0;
-  font-size: 32px;
-  color: $color-font-white;
-  background-color: $color-main;
-  border-radius: 50%;
+  &__left {
+    @extend .c-carousel-button;
+    left: 0;
+    border-radius: 50%;
+    font-size: 32px;
+    color: $color-font-white;
+    background-color: $color-main;
+  }
+  &__right {
+    @extend .c-carousel-button;
+    right: 0;
+    border-radius: 50%;
+    font-size: 32px;
+    color: $color-font-white;
+    background-color: $color-main;
+  }
 }

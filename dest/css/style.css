@@ -6349,7 +6349,6 @@ a {
 .c-button, .c-button__submit {
   border: none;
   border-radius: 8px;
-  box-shadow: 2px 4px 8px 1px lightgray;
   cursor: pointer;
   min-width: 96px;
   padding: 8px 0;
@@ -6359,6 +6358,7 @@ a {
 
 .c-button__submit {
   background-color: #c6f951;
+  box-shadow: 2px 4px 8px 1px lightgray;
   color: #fff;
   display: block;
   margin: 16px auto 0;
@@ -6369,7 +6369,9 @@ a {
   line-height: 40px;
   position: absolute;
   text-align: center;
-  top: 45%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 40px;
   z-index: 10;
 }
