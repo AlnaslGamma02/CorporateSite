@@ -17,6 +17,6 @@ $color-button-shadow: lightgray;
 
 // ブレイクポイント
 $breakpoints: (
-  tb: '(min-width: 600px)',
-  pc: '(min-width: 1025px)'
+  tb: 'only screen and (min-width: 600px)',
+  pc: 'only screen and (min-width: 1025px)'
 );

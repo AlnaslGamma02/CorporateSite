@@ -6585,11 +6585,6 @@ a {
 .c-footer-area {
   background-color: #3d683b;
   color: #fff;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
   margin-top: 40px;
   padding: 16px;
 }
@@ -6598,39 +6593,64 @@ a {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
-.c-footer-nav-menu {
+.c-footer-menu, .c-footer-left-col, .c-footer-center-col, .c-footer-right-col {
   text-align: center;
   width: 50%;
 }
 
-.c-footer-list {
-  padding-top: 8px;
+.c-footer-right-col {
+  width: 100%;
 }
 
 .c-footer-link {
   color: #fff;
+  display: block;
+  font-weight: bold;
+  margin-top: 16px;
 }
 
-.c-footer-sns-area {
-  font-size: 32px;
-  padding-top: 8px;
-  width: 100%;
+.c-footer-link:nth-child(1) {
+  margin-top: 0;
 }
 
-.c-footer-sns-menu {
+.c-footer-address {
+  display: none;
+}
+
+.c-footer-logo {
+  height: 64px;
+  height: auto;
+  width: 64px;
+}
+
+.c-footer-place {
+  margin-top: 16px;
+  width: 145px;
+}
+
+.c-footer-sns-list {
   display: -webkit-box;
   display: flex;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+          justify-content: center;
+  margin-top: 8px;
 }
 
 .c-footer-sns-link {
   color: #fff;
+  font-size: 35px;
+  margin-right: 16px;
 }
 
-.c-copyright {
-  padding-top: 8px;
+.c-footer-sns-link:last-child {
+  margin-right: 0;
+}
+
+.c-footer-copyright {
+  margin-top: 16px;
   text-align: center;
 }
 
@@ -6947,7 +6967,7 @@ a {
   padding-top: 0;
 }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   .l-container {
     margin-left: auto;
     margin-right: auto;
@@ -6956,9 +6976,42 @@ a {
   .c-menu-icon {
     display: none;
   }
+  .c-footer-nav {
+    justify-content: space-around;
+  }
+  .c-footer-menu, .c-footer-left-col, .c-footer-center-col, .c-footer-right-col {
+    text-align: left;
+    width: 30%;
+  }
+  .c-footer-center-col {
+    width: 33%;
+  }
+  .c-footer-right-col {
+    width: 31%;
+  }
+  .c-footer-link {
+    font-size: 24px;
+  }
+  .c-footer-address {
+    display: -webkit-box;
+    display: flex;
+    font-size: 12px;
+    -webkit-box-pack: end;
+            justify-content: flex-end;
+  }
+  .c-footer-sns-list {
+    -webkit-box-pack: end;
+            justify-content: flex-end;
+  }
+  .c-footer-sns-link {
+    margin-right: 8px;
+  }
+  .c-footer-copyright {
+    margin-top: 64px;
+  }
 }
 
-@media (min-width: 1025px) {
+@media only screen and (min-width: 1025px) {
   .l-container {
     margin-left: auto;
     margin-right: auto;

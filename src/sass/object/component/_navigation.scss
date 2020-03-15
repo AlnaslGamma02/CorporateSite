@@ -89,41 +89,98 @@
   font-weight: bold;
 }
 // フッターのグロナビ
-.c-footer-area {
-  margin-top: 40px;
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  color: $color-font-white;
-  background-color: $color-sub;
-}
-.c-footer-nav {
-  display: flex;
-  flex-wrap: wrap;
-}
-.c-footer-nav-menu {
-  width: 50%;
-  text-align: center;
-}
-.c-footer-list {
-  padding-top: 8px;
-}
-.c-footer-link {
-  color: $color-font-white;
-}
-.c-footer-sns-area {
-  padding-top: 8px;
-  width: 100%;
-  font-size: 32px;
-}
-.c-footer-sns-menu {
-  display: flex;
-  justify-content: space-around;
-}
-.c-footer-sns-link {
-  color: $color-font-white;
-}
-.c-copyright {
-  text-align: center;
-  padding-top: 8px;
+.c-footer {
+  &-area {
+    margin-top: 40px;
+    padding: 16px;
+    color: $color-font-white;
+    background-color: $color-sub;
+  }
+  &-nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    @include media(tb) {
+      justify-content: space-around;
+    }
+  }
+  &-menu {
+    width: 50%;
+    text-align: center;
+    @include media(tb) {
+      width: 30%;
+      text-align: left;
+    }
+  }
+  &-left-col {
+    @extend .c-footer-menu;
+  }
+  &-center-col {
+    @extend .c-footer-menu;
+    @include media(tb) {
+      width: 33%;
+    }
+  }
+  &-right-col {
+    @extend .c-footer-menu;
+    width: 100%;
+    @include media(tb) {
+      width: 31%;
+    }
+  }
+  &-link {
+    margin-top: 16px;
+    display: block;
+    color: $color-font-white;
+    font-weight: bold;
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+    @include media(tb) {
+      font-size: 24px;
+    }
+  }
+  &-address {
+    display: none;
+    @include media(tb) {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 12px;
+    }
+  }
+  &-logo {
+    width: 64px;
+    height: 64px;
+    height: auto;
+  }
+  &-place {
+    width: 145px;
+    margin-top: 16px;
+  }
+  &-sns-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    @include media(tb) {
+      justify-content: flex-end;
+    }
+  }
+  &-sns-link {
+    margin-right: 16px;
+    font-size: 35px;
+    color: $color-font-white;
+    &:last-child {
+      margin-right: 0;
+    }
+    @include media(tb) {
+      margin-right: 8px;
+    }
+  }
+  &-copyright {
+    margin-top: 16px;
+    text-align: center;
+    @include media(tb) {
+      margin-top: 64px;
+    }
+  }
 }
