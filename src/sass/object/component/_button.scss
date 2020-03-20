@@ -1,4 +1,11 @@
 // ボタン
+// メニューバーのお問い合わせボタン
+.c-menu-bar-button {
+  @include media(tb) {
+    background-color: $color-main;
+    border-radius: 8px;
+  }
+}
 // トップページのリンクボタン
 .c-top-link-button {
   margin: 16px auto 0;
@@ -53,7 +60,7 @@
   height: 40px;
   text-align: center;
   line-height: 40px;
-  z-index: 10;
+  @include z-index(carouselBtn);
   &__left {
     @extend .c-carousel-button;
     left: 0;

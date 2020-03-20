@@ -5,38 +5,57 @@
   height: 80px;
   transition: 0.5s;
   @include media(tb) {
+    display: flex;
+    justify-content: space-between;
   }
-}
-.c-header-nav-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: none;
-  transition: 0.5s;
-  background-color: $color-sub;
-  z-index: 2;
-  @include media(tb) {
+  &-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: 0.5s;
+    background-color: $color-sub;
+    @include z-index(menuArea);
+    &.toggle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    @include media(tb) {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: auto;
+      height: 80px;
+      background-color: transparent;
+    }
   }
-}
-.c-header-nav-menu.toggle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.c-header-nav-link {
-  display: block;
-  position: relative;
-  padding: 8px 16px;
-  margin: 0;
-  color: $color-font-white;
-  font-size: 32px;
-  font-weight: bold;
-  text-align: center;
-  transition: 0.5s;
-  z-index: 3;
-  @include media(tb) {
+  &-link {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 8px 16px;
+    color: $color-font-white;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.5s;
+    @include z-index(menuLink);
+    @include media(tb) {
+      margin: 8px;
+      padding: 0 0 4px;
+      font-size: 16px;
+      &.is-active {
+        margin-bottom: 4px;
+        border-bottom: solid 4px $color-main;
+      }
+      &:last-child {
+        padding: 3px 4px 4px;
+      }
+    }
   }
 }
 .c-menu-icon {
@@ -49,13 +68,13 @@
   font-weight: bold;
   color: $color-font-white;
   cursor: pointer;
-  z-index: 2;
+  @include z-index(menuIcon);
   @include media(tb) {
     display: none;
   }
-}
-.c-menu-icon.toggle {
-  position: fixed;
+  &.toggle {
+    position: fixed;
+  }
 }
 // ヘッダー部分のタイトル
 .c-page-title {

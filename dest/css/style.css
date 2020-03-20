@@ -6503,7 +6503,7 @@ a {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   width: 100vw;
-  z-index: 2;
+  z-index: 40;
 }
 
 .c-header-nav-menu.toggle {
@@ -6527,7 +6527,7 @@ a {
   text-align: center;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  z-index: 3;
+  z-index: 45;
 }
 
 .c-menu-icon {
@@ -6540,7 +6540,7 @@ a {
   position: absolute;
   right: 24px;
   top: 24px;
-  z-index: 2;
+  z-index: 50;
 }
 
 .c-menu-icon.toggle {
@@ -6972,6 +6972,41 @@ a {
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
+  }
+  .c-menu-bar-button {
+    background-color: #c6f951;
+    border-radius: 8px;
+  }
+  .c-header-nav {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+  }
+  .c-header-nav-menu {
+    -webkit-box-align: center;
+            align-items: center;
+    background-color: transparent;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    height: 80px;
+    position: relative;
+    width: auto;
+  }
+  .c-header-nav-link {
+    font-size: 16px;
+    margin: 8px;
+    padding: 0 0 4px;
+  }
+  .c-header-nav-link.is-active {
+    border-bottom: solid 4px #c6f951;
+    margin-bottom: 4px;
+  }
+  .c-header-nav-link:last-child {
+    padding: 3px 4px 4px;
   }
   .c-menu-icon {
     display: none;

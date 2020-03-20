@@ -17,6 +17,10 @@
     @content;
   }
 }
+// z-index
+@mixin z-index($key) {
+  z-index: map-get($layer, $key);
+}
 // リンクボタン
 @mixin linkButton($width) {
   display: block;
