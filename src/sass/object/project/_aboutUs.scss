@@ -1,9 +1,18 @@
-.p-about-us-area {
-  margin-top: 40px;
-  padding: 0 16px;
-}
-.p-about-us-paragraph {
-  margin-top: 32px;
-  font-weight: bold;
-  line-height: 2;
+.p-about-us {
+  &-area {
+    margin-top: 40px;
+    padding: 0 16px;
+  }
+  &-paragraph {
+    margin-top: 32px;
+    font-size: 23px;
+    font-weight: bold;
+    @include media(tb) {
+      margin-top: 0;
+      font-size: 18px;
+      &:first-child {
+        margin-top: 32px;
+      }
+    }
+  }
 }

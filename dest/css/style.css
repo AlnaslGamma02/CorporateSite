@@ -6364,7 +6364,26 @@ a {
   margin: 16px auto 0;
 }
 
+.c-carousel-container {
+  margin: 40px auto 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.c-carousel-slide {
+  display: -webkit-box;
+  display: flex;
+  min-width: 100%;
+}
+
+.c-carousel-image {
+  height: auto;
+  min-width: 100%;
+}
+
 .c-carousel-button, .c-carousel-button__left, .c-carousel-button__right {
+  cursor: pointer;
   height: 40px;
   line-height: 40px;
   position: absolute;
@@ -6381,7 +6400,7 @@ a {
   border-radius: 50%;
   color: #fff;
   font-size: 32px;
-  left: 0;
+  left: 5%;
 }
 
 .c-carousel-button__right {
@@ -6389,7 +6408,7 @@ a {
   border-radius: 50%;
   color: #fff;
   font-size: 32px;
-  right: 0;
+  right: 5%;
 }
 
 .c-form-area {
@@ -6481,10 +6500,6 @@ a {
   width: 100%;
 }
 
-.c-media__carousel {
-  min-width: 343.2px;
-}
-
 .c-header-nav {
   height: 80px;
   position: relative;
@@ -6559,6 +6574,7 @@ a {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .c-page-title__top {
@@ -6693,8 +6709,8 @@ a {
 }
 
 .p-about-us-paragraph {
+  font-size: 23px;
   font-weight: bold;
-  line-height: 2;
   margin-top: 32px;
 }
 
@@ -6802,18 +6818,6 @@ a {
   font-weight: bold;
   line-height: 2;
   margin: 0;
-}
-
-.p-carousel-container {
-  margin-top: 40px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-
-.p-carousel-slide {
-  display: -webkit-box;
-  display: flex;
 }
 
 .p-company-profile {
@@ -6976,6 +6980,7 @@ a {
   .c-menu-bar-button {
     background-color: #c6f951;
     border-radius: 8px;
+    cursor: pointer;
   }
   .c-header-nav {
     display: -webkit-box;
@@ -7043,6 +7048,13 @@ a {
   }
   .c-footer-copyright {
     margin-top: 64px;
+  }
+  .p-about-us-paragraph {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  .p-about-us-paragraph:first-child {
+    margin-top: 32px;
   }
 }
 

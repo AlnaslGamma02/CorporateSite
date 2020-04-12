@@ -1,8 +1,8 @@
 // カルーセル
 export default class {
   constructor() {
-    this.carouselSlide = document.querySelector('.p-carousel-slide');
-    this.carouselImages = document.querySelectorAll('.c-media__carousel');
+    this.carouselSlide = document.querySelector('.c-carousel-slide');
+    this.carouselImages = document.querySelectorAll('.c-carousel-image');
     // ボタン
     this.prevBtn = document.querySelector('#prevBtn');
     this.nextBtn = document.querySelector('#nextBtn');
@@ -13,11 +13,20 @@ export default class {
   }
 
   attachEvent() {
+    // カウンター
     let counter = 1;
-    const size = this.carouselImages[0].clientWidth;
+    let size = this.carouselImages[0].clientWidth;
 
     this.carouselSlide.style.transform = `translateX(${-size * counter}px)`;
 
+    // ウィンドウ リサイズ対応
+    window.onresize = () => {
+      size = this.carouselImages[0].clientWidth;
+      this.carouselSlide.style.transition = 'none';
+      this.carouselSlide.style.transform = `translateX(${-size * counter}px)`;
+    };
+
+    // 次へボタンリスナー
     this.nextBtn.addEventListener(
       'click',
       () => {
@@ -29,6 +38,7 @@ export default class {
       false
     );
 
+    // 前へボタンリスナー
     this.prevBtn.addEventListener(
       'click',
       () => {
@@ -40,6 +50,7 @@ export default class {
       false
     );
 
+    // CSS アニメーションの終了時に判定
     this.carouselSlide.addEventListener(
       'transitionend',
       () => {
