@@ -6494,12 +6494,6 @@ a {
   width: 100%;
 }
 
-.c-media__service-image {
-  height: auto;
-  vertical-align: bottom;
-  width: 100%;
-}
-
 .c-header-nav {
   height: 80px;
   position: relative;
@@ -6843,7 +6837,7 @@ a {
   text-align: center;
 }
 
-.p-service {
+.p-service-area {
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -6854,13 +6848,14 @@ a {
 }
 
 .p-service-content {
+  -webkit-box-align: center;
+          align-items: center;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
   margin-top: 40px;
-  text-align: center;
 }
 
 .p-service-image-area {
@@ -6871,16 +6866,24 @@ a {
   margin: 0;
 }
 
-.p-service-title {
-  margin: 16px 0 0;
+.p-service-image {
+  height: auto;
+  vertical-align: bottom;
+  width: 100%;
 }
 
-.p-service-title__management-agency {
-  margin: 24px 0 0;
+.p-service-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 16px 0 0;
+  text-align: center;
 }
 
 .p-service-paragraph {
+  font-size: 23px;
+  font-weight: bold;
   margin-top: 16px;
+  word-spacing: 1em;
 }
 
 .p-service-top {
@@ -7049,12 +7052,42 @@ a {
   .c-footer-copyright {
     margin-top: 64px;
   }
+  .c-section-title {
+    font-size: 48px;
+  }
   .p-about-us-paragraph {
     font-size: 18px;
     margin-top: 0;
   }
   .p-about-us-paragraph:first-child {
     margin-top: 32px;
+  }
+  .p-service-content {
+    -webkit-box-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+  }
+  .p-service-content:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+  }
+  .p-service-image-area {
+    width: 48%;
+  }
+  .p-service-text {
+    width: 48%;
+  }
+  .p-service-title {
+    margin-top: 0;
+  }
+  .p-service-paragraph {
+    font-size: 16px;
+    word-spacing: -0.3em;
   }
 }
 

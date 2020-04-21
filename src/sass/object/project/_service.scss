@@ -1,32 +1,65 @@
-// サービス
+// サービスページ
 .p-service {
-  margin-top: 40px;
-  padding: 0 16px;
-  display: flex;
-  flex-direction: column;
-}
-.p-service-content {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.p-service-image-area {
-  min-height: 264px;
-}
-.p-service-figure {
-  margin: 0;
-}
-// .p-service-text {
-// }
-.p-service-title {
-  margin: 16px 0 0;
-}
-.p-service-title__management-agency {
-  margin: 24px 0 0;
-}
-.p-service-paragraph {
-  margin-top: 16px;
+  &-area {
+    margin-top: 40px;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  &-content {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include media(tb) {
+      // 奇数番目はテキスト・画像の順番に並べる
+      // 偶数番目は画像・テキストの順番に並べる
+      flex-direction: row-reverse;
+      &:nth-child(even) {
+        flex-direction: row;
+      }
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+  &-image-area {
+    min-height: 264px;
+    @include media(tb) {
+      width: 48%;
+    }
+  }
+  &-figure {
+    margin: 0;
+  }
+  &-image {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+  }
+  &-text {
+    @include media(tb) {
+      width: 48%;
+    }
+  }
+  &-title {
+    margin: 16px 0 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    @include media(tb) {
+      margin-top: 0;
+    }
+  }
+  &-paragraph {
+    margin-top: 16px;
+    font-size: 23px;
+    font-weight: bold;
+    word-spacing: 1em;
+    @include media(tb) {
+      font-size: 16px;
+      word-spacing: -0.3em;
+    }
+  }
 }
 // トップページ　サービスセクション
 .p-service-top {
