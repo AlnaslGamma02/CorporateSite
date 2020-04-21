@@ -6706,6 +6706,7 @@ a {
   font-size: 23px;
   font-weight: bold;
   margin-top: 32px;
+  word-spacing: 1em;
 }
 
 .p-accordion {
@@ -7058,6 +7059,7 @@ a {
   .p-about-us-paragraph {
     font-size: 18px;
     margin-top: 0;
+    word-spacing: -0.3em;
   }
   .p-about-us-paragraph:first-child {
     margin-top: 32px;
