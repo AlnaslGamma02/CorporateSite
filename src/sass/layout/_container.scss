@@ -1,0 +1,8 @@
+.l-container {
+  @include media(tb) {
+    @include container(800px);
+  }
+  @include media(pc) {
+    @include container(1100px);
+  }
+}

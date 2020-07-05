@@ -1,0 +1,26 @@
+.c-form-area {
+  margin-top: 40px;
+  padding: 0 16px;
+}
+.c-form {
+  margin-top: 16px;
+  width: 100%;
+}
+.c-form-label {
+  padding: 8px 0;
+  font-weight: bold;
+}
+.c-form-email {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid $color-font-black;
+  border-radius: 4px;
+}
+.c-form-name {
+  @extend .c-form-email;
+}
+.c-form-content {
+  @extend .c-form-email;
+  resize: none;
+}

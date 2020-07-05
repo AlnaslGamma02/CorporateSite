@@ -1,0 +1,21 @@
+// 私たちについてページ
+.p-about-us {
+  &-area {
+    margin-top: 40px;
+    padding: 0 16px;
+  }
+  &-paragraph {
+    margin-top: 32px;
+    font-size: 23px;
+    font-weight: bold;
+    word-spacing: 1em;
+    @include media(tb) {
+      margin-top: 0;
+      font-size: 18px;
+      word-spacing: -0.3em;
+      &:first-child {
+        margin-top: 32px;
+      }
+    }
+  }
+}

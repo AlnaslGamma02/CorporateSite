@@ -1,0 +1,38 @@
+// ヒーローイメージ
+.c-media__heroimage {
+  width: 100%;
+  height: 600px;
+}
+.c-media__heroimage-top {
+  @extend .c-media__heroimage;
+  @include heroImage('../img/hero_top_mb.png');
+}
+.c-media__heroimage-about-us {
+  @extend .c-media__heroimage;
+  @include heroImage('../img/hero_aboutUs_mb.png');
+}
+.c-media__heroimage-service {
+  @extend .c-media__heroimage;
+  @include heroImage('../img/hero_service_mb.png');
+}
+.c-media__heroimage-news {
+  @extend .c-media__heroimage;
+  @include heroImage('../img/hero_news_mb.png');
+}
+.c-media__heroimage-company-profile {
+  @extend .c-media__heroimage;
+  @include heroImage('../img/hero_companyProfile_mb.png');
+}
+.c-media__heroimage-contact-us {
+  @extend .c-media__heroimage;
+  @include heroImage('../img/hero_contactUs_mb.png');
+}
+// 企業ロゴ
+.c-media__toplogo {
+  height: 80px;
+}
+// サムネイル
+.c-media__thumbnail {
+  width: 100%;
+  vertical-align: bottom;
+}

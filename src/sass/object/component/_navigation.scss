@@ -1,0 +1,206 @@
+// ヘッダーのグロナビ
+.c-header-nav {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  transition: 0.5s;
+  @include media(tb) {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: 0.5s;
+    background-color: $color-sub;
+    @include z-index(menuArea);
+    &.toggle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    @include media(tb) {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: auto;
+      height: 80px;
+      background-color: transparent;
+    }
+  }
+  &-link {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 8px 16px;
+    color: $color-font-white;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.5s;
+    @include z-index(menuLink);
+    @include media(tb) {
+      margin: 8px;
+      padding: 0 0 4px;
+      font-size: 16px;
+      &.is-active {
+        margin-bottom: 4px;
+        border-bottom: solid 4px $color-main;
+      }
+      &:last-child {
+        padding: 3px 4px 4px;
+      }
+    }
+  }
+}
+.c-menu-icon {
+  display: block;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  padding: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  color: $color-font-white;
+  cursor: pointer;
+  @include z-index(menuIcon);
+  @include media(tb) {
+    display: none;
+  }
+  &.toggle {
+    position: fixed;
+  }
+}
+// ヘッダー部分のタイトル
+.c-page-title {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: $color-font-white;
+  font-family: $font-eng;
+  font-size: 64px;
+  font-weight: bold;
+}
+.c-page-title__top {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.c-page-title__top-heading {
+  display: block;
+  width: 90%;
+  margin: 0 auto 0;
+  color: $color-font-white;
+  font-family: $font-eng;
+  font-size: 32px;
+  font-weight: bold;
+}
+// フッターのグロナビ
+.c-footer {
+  &-area {
+    margin-top: 40px;
+    padding: 16px;
+    color: $color-font-white;
+    background-color: $color-sub;
+  }
+  &-nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    @include media(tb) {
+      justify-content: space-around;
+    }
+  }
+  &-menu {
+    width: 50%;
+    text-align: center;
+    @include media(tb) {
+      width: 30%;
+      text-align: left;
+    }
+  }
+  &-left-col {
+    @extend .c-footer-menu;
+  }
+  &-center-col {
+    @extend .c-footer-menu;
+    @include media(tb) {
+      width: 33%;
+    }
+  }
+  &-right-col {
+    @extend .c-footer-menu;
+    width: 100%;
+    @include media(tb) {
+      width: 31%;
+    }
+  }
+  &-link {
+    margin-top: 16px;
+    display: block;
+    color: $color-font-white;
+    font-weight: bold;
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+    @include media(tb) {
+      font-size: 24px;
+    }
+  }
+  &-address {
+    display: none;
+    @include media(tb) {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 12px;
+    }
+  }
+  &-logo {
+    width: 64px;
+    height: 64px;
+    height: auto;
+  }
+  &-place {
+    width: 145px;
+    margin-top: 16px;
+  }
+  &-sns-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    @include media(tb) {
+      justify-content: flex-end;
+    }
+  }
+  &-sns-link {
+    margin-right: 16px;
+    font-size: 35px;
+    color: $color-font-white;
+    &:last-child {
+      margin-right: 0;
+    }
+    @include media(tb) {
+      margin-right: 8px;
+    }
+  }
+  &-copyright {
+    margin-top: 16px;
+    text-align: center;
+    @include media(tb) {
+      margin-top: 64px;
+    }
+  }
+}

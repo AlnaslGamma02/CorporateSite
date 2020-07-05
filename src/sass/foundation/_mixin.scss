@@ -1,0 +1,34 @@
+// ヒーローイメージ
+@mixin heroImage($image) {
+  background-image: url(#{$image});
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+// コンテナー
+@mixin container($width) {
+  max-width: $width;
+  margin-left: auto;
+  margin-right: auto;
+}
+// メディアクエリ
+@mixin media($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+// z-index
+@mixin z-index($key) {
+  z-index: map-get($layer, $key);
+}
+// リンクボタン
+@mixin linkButton($width) {
+  display: block;
+  padding: 16px 32px;
+  width: $width;
+  font-size: 16px;
+  font-weight: bold;
+  color: $color-font-white;
+  background-color: $color-main;
+  box-shadow: 2px 4px 8px 1px $color-button-shadow;
+}
